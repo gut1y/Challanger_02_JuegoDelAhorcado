@@ -1,0 +1,402 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lacquer', cursive;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+html {
+  position: relative;
+  width: 100%;
+}
+body {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+  user-select: none;
+  -webkit-user-select: none;
+  /* background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(45, 71, 253, 1) 100%
+  ); */
+  background-image: url(https://fondosmil.com/fondo/7586.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+}
+
+header {
+  width: 100%;
+  margin: auto;
+ 
+}
+.contenedor-logo {
+  display: block;
+  width: 100%;
+}
+.logo {
+  width: 5rem;
+  height: 3rem;
+  margin: 10px 0;
+}
+
+h1 {
+  text-align: center;
+  color: #CC0000;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 80px;
+  text-shadow: 8px 4px 3px black;
+}
+h1 span {
+  color: #0a3871;
+}
+main {
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  box-sizing: border-box;
+  padding-bottom: 3rem;
+}
+
+.seccion1 {
+  width: 100%;
+}
+.contenedor-canvas {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  box-sizing: border-box;
+  width: 40%;
+  height: 400px;
+  border-radius: 25px;
+  transform-style: preserve-3d;
+  min-width: 16rem;
+}
+
+.frente-canvas {
+  width: 250px;
+  height: 400px;
+  border-radius: 25px;
+  backface-visibility: hidden;
+  position: absolute;
+  opacity: 0.9;
+  background-color: #000;
+  color: #fff;
+}
+.rotar {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+canvas {
+  width: 250px;
+  /* width: 100%; */
+  height: 400px;
+  background-color: black;
+  border-radius: 25px;
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  opacity: 0.9;
+}
+
+.contenedor-letras-bien {
+  font-size: 36px;
+  text-align: center;
+  min-height: 2rem;
+  color: #CC0000;
+  box-sizing: border-box;
+  vertical-align: bottom;
+}
+
+.letra-bien {
+  width: 28px;
+  height: 2.5rem;
+  display: inline-block;
+  border-bottom: 4px solid #CC0000;
+  text-shadow: 2px 2px 2px white;
+  vertical-align: bottom;
+  margin: 0 5px;
+}
+
+.contenedor-letras-mal {
+  font-size: 25px;
+  color: #0a3871;
+  text-align: center;
+  text-shadow: 2px 2px 2px white;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  padding-top: 5px;
+}
+
+.letras-mal {
+  width: 25px;
+  display: inline-block;
+  background-color: slategray;
+  border-radius: 5px;
+  padding: 0 3px;
+  margin: 1px 5px;
+  opacity: 0.8;
+  font-weight: 900;
+
+}
+
+.teclas {
+  display: block;
+  text-align: center;
+}
+.teclado-pantalla {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+  opacity: 0.8;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.key {
+  width: 15px;
+  display: inline-block;
+  color: #fff;
+  margin: 3px;
+  padding: 2px;
+  /* background-image: url(../img/fondoDra0.jpg); */
+  background: linear-gradient(#0a3871, #111, #0a3871);
+  border-radius: 3px;
+}
+.key:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: brightness(1.9);
+  color: crimson;
+  text-shadow: 1px 1px 1px #fff;
+}
+.key:active {
+  filter: contrast(2);
+}
+
+.teclado {
+  width: 70px;
+  height: 50px;
+}
+.teclado:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #0a3871;
+}
+.teclado:active {
+  filter: brightness(4);
+}
+
+.contenedor-botones {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.btn-nuevo,
+.btn-desistir {
+  width: 15%;
+  height: 3rem;
+  margin: 0 2rem;
+  font-size: 18px;
+  border-radius: 50px;
+  /* background-image: url(../img/2583259.jpg); */
+  background: linear-gradient(#0a3871, #111, #0a3871);
+  border: 2px solid black;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  min-width: 12rem;
+  margin-top: 1rem;
+  outline: none;
+  text-shadow: 2px 2px 2px black;
+}
+
+.btn-nuevo:hover,
+.btn-desistir:hover,
+.btn-agregar:hover,
+.btn-iniciar:hover,
+.btn-aceptar:hover,
+.btn-cancelar:hover {
+  transform: scale(1.2);
+  filter: brightness(2);
+  transition: 0.5s;
+  color: #CC0000;
+  text-shadow: 4px 3px 2px black;
+}
+.btn-nuevo:active,
+.btn-desistir:active,
+.btn-agregar:active,
+.btn-iniciar:active,
+.btn-aceptar:active,
+.btn-cancelar:active {
+  filter: brightness(4);
+  filter: contrast(2);
+}
+
+.seccion2 {
+  width: 100%;
+}
+
+.contenedor-botones-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.btn-iniciar,
+.btn-agregar {
+  width: 20%;
+  height: 4rem;
+  margin: 5px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 20px;
+  
+  outline: none;
+  min-width: 14rem;
+  text-shadow: 10px 5px 3px #232323;
+  border: none;
+  
+}
+.btn-iniciar {
+  /* background-image: url(../img/como-entrenar-a-tu-dragon-3-1550490357.webp); */
+  background: transparent;
+  height: 10rem;
+  font-size: 2.5rem;
+
+}
+.btn-agregar {
+  background: transparent;
+  height: 10rem;
+  font-size: 2.5rem;
+  width: auto;
+}
+
+.contenedor-texto {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 3rem;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.fondo-negro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+  border-radius: 25px;
+  margin: 0 auto;
+  background-color: #000;
+  opacity: 0.8;
+  box-sizing: border-box;
+}
+.entrada-texto {
+  width: 80%;
+  padding: 0 1rem;
+  outline: none;
+  border: none;
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 25px;
+  box-sizing: border-box;
+  color: crimson;
+  text-shadow: 2px 2px 2px #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  /* background-image: url(../img/how-to-train-your-dragon-concept-art-wallpaper-preview.jpg); */
+}
+
+.contenedor-botones-agregar {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.botones-form {
+  width: 40%;
+}
+.btn-aceptar,
+.btn-cancelar {
+  width: 100%;
+  margin: 30px 0;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bolder;
+  /* background-image: url(../img/2583259.jpg); */
+  background: linear-gradient(#0a3871, #111, #0a3871);
+  cursor: pointer;
+  text-shadow: 2px 2px 2px #fff;
+}
+
+.contenedor-footer {
+  background: linear-gradient(#0a3871, #232323);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 100%;
+  height: 2rem;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  box-sizing: border-box;
+  border-top: 1px solid #444;
+}
+
+.bordeVerde {
+  border-bottom: 4px solid #626c78;
+}
+
+.ocultar {
+  display: none;
+}
+.ocultar2 {
+  visibility: hidden;
+}
+
+.ocultarOpaco {
+  opacity: 0;
+  transition: 2s;
+  display: none;
+}
+
+.mostrar {
+  opacity: 1;
+  transition: 2s;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 65px;
+  }
+  .teclas {
+    display: block;
+  }
+}
