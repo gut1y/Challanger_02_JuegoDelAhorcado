@@ -3,17 +3,21 @@
   margin: 0;
   font-family: 'Lacquer', cursive;
 }
+
 a {
   color: #fff;
   text-decoration: none;
 }
+
 a:visited {
   text-decoration: none;
 }
+
 html {
   position: relative;
   width: 100%;
 }
+
 body {
   width: 100%;
   box-sizing: border-box;
@@ -39,12 +43,14 @@ body {
 header {
   width: 100%;
   margin: auto;
- 
+
 }
+
 .contenedor-logo {
   display: block;
   width: 100%;
 }
+
 .logo {
   width: 5rem;
   height: 3rem;
@@ -59,9 +65,11 @@ h1 {
   font-size: 80px;
   text-shadow: 8px 4px 3px black;
 }
+
 h1 span {
   color: #0a3871;
 }
+
 main {
   width: 100%;
   height: 100%;
@@ -74,6 +82,7 @@ main {
 .seccion1 {
   width: 100%;
 }
+
 .contenedor-canvas {
   position: relative;
   margin: 0 auto;
@@ -98,6 +107,7 @@ main {
   background-color: #000;
   color: #fff;
 }
+
 .rotar {
   transform: rotateY(180deg);
   transition: 1s;
@@ -160,6 +170,7 @@ canvas {
   display: block;
   text-align: center;
 }
+
 .teclado-pantalla {
   display: flex;
   width: 300px;
@@ -182,6 +193,7 @@ canvas {
   background: linear-gradient(#0a3871, #111, #0a3871);
   border-radius: 3px;
 }
+
 .key:hover {
   cursor: pointer;
   transform: scale(1.1);
@@ -189,6 +201,7 @@ canvas {
   color: crimson;
   text-shadow: 1px 1px 1px #fff;
 }
+
 .key:active {
   filter: contrast(2);
 }
@@ -197,11 +210,13 @@ canvas {
   width: 70px;
   height: 50px;
 }
+
 .teclado:hover {
   cursor: pointer;
   transform: scale(1.1);
   color: #0a3871;
 }
+
 .teclado:active {
   filter: brightness(4);
 }
@@ -243,9 +258,10 @@ canvas {
   transition: 0.5s;
   color: #CC0000;
   text-shadow: 6px 3px 2px black;
-    background: linear-gradient(#232323, #1c1818, #313842);
+  background: linear-gradient(#232323, #1c1818, #313842);
 
 }
+
 .btn-nuevo:active,
 .btn-desistir:active,
 .btn-agregar:active,
@@ -281,16 +297,17 @@ canvas {
   min-width: 14rem;
   text-shadow: 2px 2px 2px #232323;
   background: linear-gradient(#232323, #1c1818, #313842);
-  
+
 }
+
 .btn-iniciar {
   /* background-image: url(../img/como-entrenar-a-tu-dragon-3-1550490357.webp); */
   background: linear-gradient(#232323, #1c1818, #313842);
-    height: 10rem;
-    font-size: 2rem;
-    border-radius: 20px
-
+  height: 10rem;
+  font-size: 2rem;
+  border-radius: 20px
 }
+
 .btn-agregar {
   font-size: 24px;
   margin: 1rem 0;
@@ -305,6 +322,7 @@ canvas {
   opacity: 0;
   box-sizing: border-box;
 }
+
 .fondo-negro {
   display: flex;
   align-items: center;
@@ -317,6 +335,7 @@ canvas {
   opacity: 0.8;
   box-sizing: border-box;
 }
+
 .entrada-texto {
   width: 80%;
   padding: 0 1rem;
@@ -340,9 +359,11 @@ canvas {
   justify-content: space-between;
   box-sizing: border-box;
 }
+
 .botones-form {
   width: 40%;
 }
+
 .btn-aceptar,
 .btn-cancelar {
   width: 100%;
@@ -362,11 +383,13 @@ canvas {
 .contenedor-footer {
   background: linear-gradient(#0a3871, #232323);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+
+  font-size: 15px;
   width: 100%;
-  height: 2rem;
+  height: 2.5rem;
   position: absolute;
   bottom: 0;
   color: white;
@@ -374,6 +397,20 @@ canvas {
   border-top: 1px solid #444;
 }
 
+.imgCentrar {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 23px;
+  margin-left: 15px;
+
+}
+
+a {
+  margin-left: 5px;
+}
 .bordeVerde {
   border-bottom: 4px solid #626c78;
 }
@@ -381,6 +418,7 @@ canvas {
 .ocultar {
   display: none;
 }
+
 .ocultar2 {
   visibility: hidden;
 }
@@ -396,10 +434,12 @@ canvas {
   transition: 2s;
 }
 
+
 @media screen and (max-width: 1000px) {
   h1 {
     font-size: 65px;
   }
+
   .teclas {
     display: block;
   }
